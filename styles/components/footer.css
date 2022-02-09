@@ -1,0 +1,26 @@
+.footer {
+  background-color: rgb(250, 250, 250);
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-items: center;
+  padding: 15px;
+  border-top: 3px solid gray;
+  height: 55px;
+}
+
+.footer__button {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 2px white, 0 0 5px white, 0 0 8px black, 0 0 12px black,
+    0 0 16px blue;
+}
+
+.footer__button:hover {
+  color: rgb(125, 222, 133);
+}
