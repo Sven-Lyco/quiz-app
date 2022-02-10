@@ -11,14 +11,14 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <h1>Quizzies</h1>
+      <h1 class="header__title">Quizzies</h1>
     </header>
-
     <!-- Main -->
     <main class="card__list">
       <!-- Question Card 1-->
       <div class="card">
         <h2 class="card__title">Question:</h2>
+        <span class="card__bookmark"></span>
         <p class="card__question">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolore
           alias odit! Debitis, explicabo reiciendis! Id, minima eius ad
@@ -33,9 +33,11 @@
           <li><a href="#" class="card__tag">#tag4</a></li>
         </ul>
       </div>
+
       <!-- Question Card 2-->
       <div class="card">
         <h2 class="card__title">Question:</h2>
+        <span class="card__bookmark"></span>
         <p class="card__question">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolore
           alias odit! Debitis, explicabo reiciendis! Id, minima eius ad
@@ -50,9 +52,11 @@
           <li><a href="#" class="card__tag">#tag4</a></li>
         </ul>
       </div>
+
       <!-- Question Card 3-->
       <div class="card">
         <h2 class="card__title">Question:</h2>
+        <span class="card__bookmark"></span>
         <p class="card__question">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolore
           alias odit! Debitis, explicabo reiciendis! Id, minima eius ad
@@ -71,7 +75,7 @@
       <!-- Question Card 4-->
       <div class="card">
         <h2 class="card__title">Question:</h2>
-        <i class="fa-solid fa-house fa-5x"></i>
+        <span class="card__bookmark"></span>
         <p class="card__question">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolore
           alias odit! Debitis, explicabo reiciendis! Id, minima eius ad
@@ -90,41 +94,30 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div>
-        <a class="footer__button" href="/index.html" aria-label="Link to Home">
-          Home
-        </a>
-      </div>
-
-      <div>
-        <a
-          class="footer__button"
-          href="/pages/bookmarks.html"
-          aria-label="Link to Bookmarks"
-        >
-          Boomarks
-        </a>
-      </div>
-
-      <div>
-        <a
-          class="footer__button"
-          href="/create-card.html"
-          aria-label="Link to Create a Questioncard"
-        >
-          Create
-        </a>
-      </div>
-
-      <div>
-        <a
-          class="footer__button"
-          href="/account.html"
-          aria-label="Link to Account"
-        >
-          Account
-        </a>
-      </div>
+      <a
+        class="footer__button footer__button--home"
+        href="/index.html"
+        aria-label="Link to Home"
+        >Home</a
+      >
+      <a
+        class="footer__button"
+        href="/pages/bookmarks.html"
+        aria-label="Link to Bookmarks"
+        >Boomarks</a
+      >
+      <a
+        class="footer__button"
+        href="/create-card.html"
+        aria-label="Link to Create a Questioncard"
+        >Create</a
+      >
+      <a
+        class="footer__button"
+        href="/account.html"
+        aria-label="Link to Account"
+        >Account</a
+      >
     </footer>
   </body>
 </html>
