@@ -50,7 +50,7 @@
   padding: 0;
 }
 
-.card__button {
+.card__button-show-answer {
   font-size: 1.1rem;
   display: block;
   margin: 20px auto;
@@ -59,14 +59,31 @@
   color: white;
   border: 1px solid rgb(64, 0, 255);
   border-radius: 50px;
-  box-shadow: 0 0 2px white, 0 0 5px rgb(64, 0, 255), 0 0 6px rgb(64, 0, 255),
-    0 0 7px rgb(64, 0, 255), 0 0 8px rgb(64, 0, 255), 0 0 9px rgb(64, 0, 255),
-    0 0 10px rgb(64, 0, 255);
+  box-shadow: 0 0 2px white, 0 0 5px black, 0 0 8px black, 0 0 12px blue,
+    0 0 16px blue;
 }
 
-.card__button:hover {
+.card__button-show-answer:hover {
   cursor: pointer;
-  background-color: rgb(64, 0, 255);
+  background-color: blue;
+}
+
+.card__button-hide-answer {
+  font-size: 1.1rem;
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(255, 0, 247);
+  border-radius: 50px;
+  box-shadow: 0 0 2px black, 0 0 5px black, 0 0 8px black,
+    0 0 12px rgb(255, 0, 247), 0 0 16px rgb(255, 0, 247);
+}
+
+.card__button-hide-answer:hover {
+  cursor: pointer;
+  background-color: rgb(255, 0, 247);
 }
 
 .card__tag-group {
