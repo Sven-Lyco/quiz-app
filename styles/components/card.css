@@ -63,7 +63,7 @@
     0 0 16px blue;
 }
 
-.card__button-show-answer:hover {
+.card__button-show-answer:active {
   cursor: pointer;
   background-color: blue;
 }
@@ -81,7 +81,7 @@
     0 0 12px rgb(255, 0, 247), 0 0 16px rgb(255, 0, 247);
 }
 
-.card__button-hide-answer:hover {
+.card__button-hide-answer:active {
   cursor: pointer;
   background-color: rgb(255, 0, 247);
 }
@@ -108,6 +108,6 @@
     0 0 10px rgb(64, 0, 255);
 }
 
-.card__tag:hover {
+.card__tag:active {
   background-color: rgb(64, 0, 255);
 }
