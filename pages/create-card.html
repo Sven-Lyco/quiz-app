@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import style.css -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <title>Quizzies</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Create</h1>
+    </header>
+    <!-- Main -->
+    <main class="card__list">
+      <div class="card">
+        <form action="#">
+          <!-- Question -->
+          <div>
+            <label for="question-input"><p>Question:</p></label>
+            <textarea
+              required
+              cols="31"
+              rows="6"
+              name="question"
+              id="question-input"
+              placeholder="Why ...?"
+            ></textarea>
+          </div>
+          <!-- Answer -->
+          <div>
+            <label for="answer-input"><p>Answer:</p></label>
+            <textarea
+              cols="31"
+              rows="6"
+              required
+              name="answer"
+              id="answer-input"
+              placeholder="Because ...!"
+            ></textarea>
+          </div>
+          <!-- Tags -->
+          <div>
+            <label for="tags-input"><p>Tags:</p></label>
+            <input
+              type="text"
+              name="tags"
+              id="tags-input"
+              placeholder="html, css, more..."
+            />
+          </div>
+          <button class="card__button-show-answer">Create Card</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a
+        class="footer__button footer__button--home"
+        href="/index.html"
+        aria-label="Link to Home"
+        ><div style="color: white"><i class="material-icons">home</i></div></a
+      >
+      <a
+        class="footer__button"
+        href="/pages/bookmarks.html"
+        aria-label="Link to Bookmarks"
+        ><div style="color: white">
+          <i class="material-icons"> bookmark </i>
+        </div></a
+      >
+      <a
+        class="footer__button"
+        href="/pages/create-card.html"
+        aria-label="Link to Create a Questioncard"
+        ><div style="color: rgb(64, 0, 255)">
+          <i class="material-icons"> edit </i>
+        </div></a
+      >
+      <a
+        class="footer__button"
+        href="/account.html"
+        aria-label="Link to Account"
+        ><div style="color: white">
+          <i class="material-icons"> person_outline </i>
+        </div></a
+      >
+    </footer>
+  </body>
+</html>
