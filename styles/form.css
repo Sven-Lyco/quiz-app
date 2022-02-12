@@ -1,0 +1,39 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__textarea {
+  background-color: rgba(12, 13, 14, 0.795);
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgb(64, 0, 255);
+}
+
+::placeholder {
+  color: rgb(150, 150, 150);
+  font-family: Ubuntu, Arial, sans-serif;
+}
+
+input {
+  width: 100%;
+  color: aliceblue;
+}
+input[type="text"] {
+  color: white;
+  font-family: Ubuntu, Arial, sans-serif;
+}
+
+textarea {
+  width: 100%;
+  color: white;
+  font-family: Ubuntu, Arial, sans-serif;
+}
