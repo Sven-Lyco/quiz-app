@@ -34,6 +34,14 @@
     0 0 10px rgb(64, 0, 255);
 }
 
+.card__bookmark:active {
+  background-color: rgb(64, 0, 255);
+}
+
+.card__bookmark:hover {
+  cursor: pointer;
+}
+
 .card__bookmark--set {
   background-color: rgb(64, 0, 255);
 }
