@@ -12,40 +12,6 @@
   position: relative;
 }
 
-.card__list {
-  overflow-y: auto;
-  margin: 0px;
-}
-
-.card__bookmark {
-  background: black;
-  position: absolute;
-  top: -20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 2px white, 0 0 5px rgb(64, 0, 255), 0 0 6px rgb(64, 0, 255),
-    0 0 7px rgb(64, 0, 255), 0 0 8px rgb(64, 0, 255), 0 0 9px rgb(64, 0, 255),
-    0 0 10px rgb(64, 0, 255);
-}
-
-.card__bookmark:active {
-  background-color: rgb(64, 0, 255);
-}
-
-.card__bookmark:hover {
-  cursor: pointer;
-}
-
-.card__bookmark--set {
-  background-color: rgb(64, 0, 255);
-}
-
 .card__title {
   color: white;
   margin: 5px;
