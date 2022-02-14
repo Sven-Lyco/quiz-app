@@ -24,6 +24,12 @@
   padding: 0;
 }
 
+.card__answer {
+  color: white;
+  margin: 10px;
+  padding: 0;
+}
+
 .card__button-show-answer {
   font-size: 1.1rem;
   display: block;

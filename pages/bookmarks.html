@@ -16,20 +16,21 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <h1 class="header__title">Bookmarks</h1>
-    </header>
-
+    <h1 class="header header__title">Bookmarks</h1>
     <!-- Main -->
     <main class="scrolling">
       <!-- Question Card 1-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What does the abbreviation HTML stand for?</p>
-        <button class="card__button-show-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-show-answer"
+          type="button"
+        >
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -43,15 +44,19 @@
       <!--ANSWER Question Card 1 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What does the abbreviation HTML stand for?</p>
-        <button class="card__button-hide-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-hide-answer"
+          type="button"
+        >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">Hypertext Markup Language</p>
+        <p class="card__answer">Hypertext Markup Language</p>
         <ul class="card__tag-group" role="list">
           <li><a href="#" class="card__tag">HTML</a></li>
           <li><a href="#" class="card__tag">Basic</a></li>
@@ -63,11 +68,15 @@
       <!-- Question Card 2-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What is the 'box-model'?</p>
-        <button class="card__button-show-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-show-answer"
+          type="button"
+        >
           Show Answer
         </button>
 
@@ -82,15 +91,19 @@
       <!--ANSWER Question Card 2 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What is the 'box-model'?</p>
-        <button class="card__button-hide-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-hide-answer"
+          type="button"
+        >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
+        <p class="card__answer">
           it describes and determines the individual layers of an element
         </p>
         <ul class="card__tag-group" role="list">
@@ -104,11 +117,15 @@
       <!-- Question Card 3-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What does git stand for?</p>
-        <button class="card__button-show-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-show-answer"
+          type="button"
+        >
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -122,15 +139,19 @@
       <!--ANSWER Question Card 3 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What does git stand for?</p>
-        <button class="card__button-hide-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-hide-answer"
+          type="button"
+        >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
+        <p class="card__answer">
           greater integration terminal - Linus Torvalds, the guy who invented
           git (and linux), said: “I’m an egotistical bastard, and I name all my
           projects after myself. First "Linux", now "Git".”
@@ -146,11 +167,15 @@
       <!-- Question Card 4-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What is GitHub mainly used for?</p>
-        <button class="card__button-show-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-show-answer"
+          type="button"
+        >
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -164,17 +189,19 @@
       <!--ANSWER Question Card 4 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark card__bookmark--set"
-          ><i class="material-icons" style="color: white"> bookmark </i></span
-        >
+        <button aria-pressed="true" class="card__bookmark card__bookmark--set">
+          <i class="material-icons" style="color: white"> bookmark </i>
+        </button>
         <p class="card__question">What is GitHub mainly used for?</p>
-        <button class="card__button-hide-answer" type="button">
+        <button
+          aria-pressed="false"
+          class="card__button-hide-answer"
+          type="button"
+        >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
-          hosting, version control, and collaboration
-        </p>
+        <p class="card__answer">hosting, version control, and collaboration</p>
         <ul class="card__tag-group" role="list">
           <li><a href="#" class="card__tag">Git</a></li>
           <li><a href="#" class="card__tag">Github</a></li>
@@ -185,13 +212,13 @@
     </main>
     <!-- Footer -->
     <nav class="navigation">
-      <a class="navigation__button" href="/index.html" aria-label="Link to Home"
-        ><div style="color: white"><i class="material-icons">home</i></div></a
+      <a class="navigation__button" href="/index.html" aria-label="Home"
+        ><div style="color: white"><i class="material-icons"> home</i></div></a
       >
       <a
         class="navigation__button"
         href="/pages/bookmarks.html"
-        aria-label="Link to Bookmarks"
+        aria-label="Bookmarks"
         ><div style="color: rgb(64, 0, 255)">
           <i class="material-icons"> bookmark </i>
         </div></a
@@ -199,13 +226,13 @@
       <a
         class="navigation__button"
         href="/pages/create-card.html"
-        aria-label="Link to Create a Questioncard"
+        aria-label="Create a Questioncard"
         ><div style="color: white"><i class="material-icons"> edit </i></div></a
       >
       <a
         class="navigation__button"
         href="/pages/account.html"
-        aria-label="Link to Account"
+        aria-label="Account"
         ><div style="color: white">
           <i class="material-icons"> person_outline </i>
         </div></a
