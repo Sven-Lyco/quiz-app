@@ -15,22 +15,21 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
-      <h1 class="header__title">Quizzies</h1>
-    </header>
+    <h1 class="header header__title">Quizzies</h1>
     <!-- Main -->
-    <main class="card__list">
+    <main class="scrolling">
+      <a class="invisible" href="#navigation" aria-label="Skip to Navigation">Skip to Navigation</a>
       <!-- Question Card 1-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
-          </i></span>
+          </i></button>
         <p class="card__question">
           What does the abbreviation HTML stand for?
         </p>
-        <button class="card__button-show-answer" type="button">
+        <button aria-pressed="false" class="card__button-show-answer" type="button">
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -44,19 +43,19 @@
       <!--ANSWER Question Card 1 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
           </i>
-        </span>
+        </button>
         <p class="card__question">
           What does the abbreviation HTML stand for?
         </p>
-        <button class="card__button-hide-answer" type="button">
+        <button aria-pressed="false" class="card__button-hide-answer" type="button">
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
+        <p class="card__answer">
           Hypertext Markup Language
         </p>
         <ul class="card__tag-group" role="list">
@@ -70,14 +69,14 @@
       <!-- Question Card 2-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
-          </i></span>
+          </i></button>
         <p class="card__question">
           What is the 'box-model'?
         </p>
-        <button class="card__button-show-answer" type="button">
+        <button aria-pressed="false" class="card__button-show-answer" type="button">
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -91,18 +90,18 @@
       <!--ANSWER Question Card 2 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
-          </i></span>
+          </i></button>
         <p class="card__question">
           What is the 'box-model'?
         </p>
-        <button class="card__button-hide-answer" type="button">
+        <button aria-pressed="false" class="card__button-hide-answer" type="button">
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
+        <p class="card__answer">
           it describes and determines the individual layers of an element
         </p>
         <ul class="card__tag-group" role="list">
@@ -116,15 +115,15 @@
       <!-- Question Card 3-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
           </i></i
-        ></span>
+        ></button>
         <p class="card__question">
           What does git stand for?
         </p>
-        <button class="card__button-show-answer" type="button">
+        <button aria-pressed="false" class="card__button-show-answer" type="button">
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -138,15 +137,15 @@
       <!--ANSWER Question Card 3 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
           </i></i
-        ></span>
-        <p class="card__question">
+        ></button>
+        <p class="card__answer">
           What does git stand for?
         </p>
-        <button class="card__button-hide-answer" type="button">
+        <button aria-pressed="false" class="card__button-hide-answer" type="button">
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
@@ -164,14 +163,14 @@
       <!-- Question Card 4-->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
-          </i></span>
+          </i></button>
         <p class="card__question">
           What is GitHub mainly used for?
         </p>
-        <button class="card__button-show-answer" type="button">
+        <button aria-pressed="false" class="card__button-show-answer" type="button">
           Show Answer
         </button>
         <ul class="card__tag-group" role="list">
@@ -185,14 +184,14 @@
       <!--ANSWER Question Card 4 -->
       <article class="card">
         <h2 class="card__title">Question:</h2>
-        <span class="card__bookmark"
+        <button aria-pressed="false" class="card__bookmark"
           ><i class="material-icons" style="color: white;">
             bookmark_border
-          </i></span>
-        <p class="card__question">
+          </i></button>
+          <p class="card__answer">
           What is GitHub mainly used for?
         </p>
-        <button class="card__button-hide-answer" type="button">
+        <button aria-pressed="false" class="card__button-hide-answer" type="button">
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
@@ -209,37 +208,38 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <nav class="navigation" id="navigation">
       <a
-        class="footer__button footer__button--home"
+        class="navigation__button"
         href="/index.html"
-        aria-label="Link to Home"
-        ><div style="color: rgb(64, 0, 255)"><i class="material-icons">home</i></div
+        aria-label="Home"
+        ><div style="color: rgb(64, 0, 255)"><i class="material-icons">
+          home</i></div
       ></a>
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/bookmarks.html"
-        aria-label="Link to Bookmarks"
+        aria-label="Bookmarks"
         ><div style="color: white"><i class="material-icons">
           bookmark
         </i></div
       ></a>
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/create-card.html"
-        aria-label="Link to Create a Questioncard"
+        aria-label="Create a Questioncard"
         ><div style="color: white"><i class="material-icons">
           edit
         </i></div
       ></a>
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/account.html"
-        aria-label="Link to Account"
+        aria-label="Account"
         ><div style="color: white"><i class="material-icons">
           person_outline
         </i></div
       ></a>
-    </footer>
+    </nav>
   </body>
 </html>

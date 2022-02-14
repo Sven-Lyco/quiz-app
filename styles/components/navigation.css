@@ -1,4 +1,4 @@
-.footer {
+.navigation {
   background-color: black;
   color: black;
   display: flex;
@@ -8,7 +8,7 @@
     0 0 12px rgb(0, 166, 255), 0 0 16px rgb(0, 166, 255);
 }
 
-.footer__button {
+.navigation__button {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -19,14 +19,10 @@
     0 0 16px blue;
 }
 
-.footer__button:hover {
+.navigation__button:hover {
   color: blue;
 }
 
-.footer__button--home {
-  color: rgb(64, 0, 255);
-}
-
-.footer__button--bookmarks {
+.navigation__button--bookmarks {
   color: rgb(64, 0, 255);
 }
