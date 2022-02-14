@@ -17,89 +17,79 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
-      <h1 class="header__title">Create</h1>
-    </header>
+    <h1 class="header header__title">Create</h1>
     <!-- Main -->
-    <main class="card__list">
-      <div class="card">
-        <div class="form__container">
-          <form class="form" action="#">
-            <!-- Question -->
-            <div>
-              <label for="question-input"><p>Question:</p></label>
-              <textarea
-                class="form__textarea"
-                required
-                cols="23"
-                rows="4"
-                name="question"
-                id="question-input"
-                placeholder="Please type in a Question"
-              ></textarea>
-            </div>
-            <!-- Answer -->
-            <div>
-              <label for="answer-input"><p>Answer:</p></label>
-              <textarea
-                class="form__textarea"
-                cols="23"
-                rows="4"
-                required
-                name="answer"
-                id="answer-input"
-                placeholder="Please type in your Answer"
-              ></textarea>
-            </div>
-            <!-- Tags -->
-            <div>
-              <label for="tags-input"><p>Tags:</p></label>
-              <input
-                class="form__textarea"
-                type="text"
-                name="tags"
-                id="tags-input"
-                placeholder="html, css, git..."
-              />
-            </div>
-            <button class="card__button-show-answer">Create Card</button>
-          </form>
-        </div>
-      </div>
+    <main class="scrolling">
+      <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
+        >Skip to Navigation</a
+      >
+      <form class="card" action="#">
+        <!-- Question -->
+        <label for="question-input"><p>Question:</p></label>
+        <textarea
+          class="form__textarea"
+          required
+          cols="23"
+          rows="4"
+          name="question"
+          id="question-input"
+          placeholder="Please type in a Question"
+        ></textarea>
+
+        <!-- Answer -->
+        <label for="answer-input"><p>Answer:</p></label>
+        <textarea
+          class="form__textarea"
+          cols="23"
+          rows="4"
+          required
+          name="answer"
+          id="answer-input"
+          placeholder="Please type in your Answer"
+        ></textarea>
+
+        <!-- Tags -->
+        <label for="tags-input"><p>Tags:</p></label>
+        <input
+          class="form__textarea"
+          type="text"
+          name="tags"
+          id="tags-input"
+          placeholder="html, css, git..."
+        />
+        <button class="card__button-show-answer">Create Card</button>
+      </form>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <a
-        class="footer__button footer__button--home"
-        href="/index.html"
-        aria-label="Link to Home"
+    <nav class="navigation" id="navigation">
+      <a class="navigation__button" href="/index.html" aria-label="Home"
         ><div style="color: white"><i class="material-icons">home</i></div></a
       >
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/bookmarks.html"
-        aria-label="Link to Bookmarks"
+        aria-label="Bookmarks"
         ><div style="color: white">
           <i class="material-icons"> bookmark </i>
         </div></a
       >
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/create-card.html"
-        aria-label="Link to Create a Questioncard"
+        aria-label="Create a Questioncard"
         ><div style="color: rgb(64, 0, 255)">
           <i class="material-icons"> edit </i>
         </div></a
       >
       <a
-        class="footer__button"
+        class="navigation__button"
         href="/pages/account.html"
-        aria-label="Link to Account"
+        aria-label="Account"
         ><div style="color: white">
           <i class="material-icons"> person_outline </i>
         </div></a
       >
-    </footer>
+    </nav>
   </body>
 </html>
