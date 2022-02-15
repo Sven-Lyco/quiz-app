@@ -123,8 +123,9 @@
         </button>
         <p class="card__question">What is the 'box-model'?</p>
         <button
+          data-js="hideAnswer1"
           aria-pressed="false"
-          class="card__button-hide-answer"
+          class="card__button card__button-hide-answer"
           type="button"
         >
           Hide Answer
@@ -180,16 +181,17 @@
         >
           <i class="material-icons" style="color: white"> bookmark_border </i>
         </button>
-        <p class="card__answer">What does git stand for?</p>
+        <p class="card__question">What does git stand for?</p>
         <button
+          data-js="hideAnswer2"
           aria-pressed="false"
-          class="card__button-hide-answer"
+          class="card__button card__button-hide-answer"
           type="button"
         >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
+        <p class="card__answer">
           greater integration terminal - Linus Torvalds, the guy who invented
           git (and linux), said: “I’m an egotistical bastard, and I name all my
           projects after myself. First "Linux", now "Git".”
@@ -241,18 +243,17 @@
         >
           <i class="material-icons" style="color: white"> bookmark_border </i>
         </button>
-        <p class="card__answer">What is GitHub mainly used for?</p>
+        <p class="card__question">What is GitHub mainly used for?</p>
         <button
+          data-js="hideAnswer3"
           aria-pressed="false"
-          class="card__button-hide-answer"
+          class="card__button card__button-hide-answer"
           type="button"
         >
           Hide Answer
         </button>
         <h2 class="card__title">Answer:</h2>
-        <p class="card__question">
-          hosting, version control, and collaboration
-        </p>
+        <p class="card__answer">hosting, version control, and collaboration</p>
         <ul class="card__tag-group" role="list">
           <li><a href="#" class="card__tag">Git</a></li>
           <li><a href="#" class="card__tag">Github</a></li>
@@ -262,7 +263,7 @@
       </article>
     </main>
 
-    <!-- Footer -->
+    <!-- Navigation -->
     <nav class="navigation" id="navigation">
       <a class="navigation__button" href="/index.html" aria-label="Home"
         ><div style="color: rgb(64, 0, 255)">

@@ -36,6 +36,10 @@ const buttonToggle3 = document.querySelector('[data-js=toggleBookmark3]');
 buttonToggle3.addEventListener('click', () => {
   buttonToggle3.classList.toggle('card__bookmark--set');
 });
+const buttonHideAnswer1 = document.querySelector('[data-js=hideAnswer1]');
+buttonHideAnswer1.addEventListener('click', () => {
+  buttonHideAnswer1.classList.toggle('card__button-hide-answer');
+});
 
 //3. QuestionCard
 const buttonToggle4 = document.querySelector('[data-js=toggleBookmark4]');
@@ -52,6 +56,10 @@ const buttonToggle5 = document.querySelector('[data-js=toggleBookmark5]');
 buttonToggle5.addEventListener('click', () => {
   buttonToggle5.classList.toggle('card__bookmark--set');
 });
+const buttonHideAnswer2 = document.querySelector('[data-js=hideAnswer2]');
+buttonHideAnswer2.addEventListener('click', () => {
+  buttonHideAnswer2.classList.toggle('card__button-hide-answer');
+});
 
 //4. QuestionCard
 const buttonToggle6 = document.querySelector('[data-js=toggleBookmark6]');
@@ -67,4 +75,8 @@ buttonShowAnswer3.addEventListener('click', () => {
 const buttonToggle7 = document.querySelector('[data-js=toggleBookmark7]');
 buttonToggle7.addEventListener('click', () => {
   buttonToggle7.classList.toggle('card__bookmark--set');
+});
+const buttonHideAnswer3 = document.querySelector('[data-js=hideAnswer3]');
+buttonHideAnswer3.addEventListener('click', () => {
+  buttonHideAnswer3.classList.toggle('card__button-hide-answer');
 });
