@@ -1,7 +1,7 @@
 //Variable zum Ändern der Hintergrundfarbe
-const buttonToggle = document.querySelector("[data-js=toggleBookmark]");
+const buttonToggle = document.querySelector('[data-js=toggleBookmark]');
 
 //Ändere die Hintergrundfarbe von den Card-Bookmarks
-buttonToggle.addEventListener("click", () => {
-  buttonToggle.classList.toggle("card__bookmark--set");
+buttonToggle.addEventListener('click', () => {
+  buttonToggle.classList.toggle('card__bookmark--set');
 });
