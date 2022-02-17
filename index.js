@@ -85,3 +85,5 @@ buttonHideAnswer4.addEventListener('click', () => {
     isAnswer4Shown = true;
   }
 });
+
+console.log('Hello World!');
