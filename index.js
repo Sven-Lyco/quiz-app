@@ -86,4 +86,4 @@ buttonHideAnswer4.addEventListener('click', () => {
   }
 });
 
-console.log('Hello World!');
+const hello = 'hello';
