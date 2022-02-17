@@ -60,7 +60,6 @@
       <article class="card">
         <h2 class="card__title">Question:</h2>
         <button
-          data-js="toggleBookmark2"
           aria-pressed="false"
           aria-label="bookmark"
           class="card__bookmark"
@@ -68,15 +67,10 @@
           <i class="material-icons" style="color: white"> bookmark_border </i>
         </button>
         <p class="card__question">What is the 'box-model'?</p>
-        <button
-          data-js="hideAnswer2"
-          aria-pressed="false"
-          class="card__button"
-          type="button"
-        >
+        <button aria-pressed="false" class="card__button" type="button">
           Show Answer
         </button>
-        <div data-js="answerTwo" hidden>
+        <div>
           <h2 class="card__title">Answer:</h2>
           <p class="card__answer">
             it describes and determines the individual layers of an element
@@ -94,7 +88,6 @@
       <article class="card">
         <h2 class="card__title">Question:</h2>
         <button
-          data-js="toggleBookmark3"
           aria-pressed="false"
           aria-label="bookmark"
           class="card__bookmark"
@@ -102,15 +95,10 @@
           <i class="material-icons" style="color: white"> bookmark_border </i>
         </button>
         <p class="card__question">What does git stand for?</p>
-        <button
-          data-js="hideAnswer3"
-          aria-pressed="false"
-          class="card__button"
-          type="button"
-        >
+        <button aria-pressed="false" class="card__button" type="button">
           Show Answer
         </button>
-        <div data-js="answerThree" hidden>
+        <div>
           <h2 class="card__title">Answer:</h2>
           <p class="card__answer">
             greater integration terminal - Linus Torvalds, the guy who invented
@@ -130,7 +118,6 @@
       <article class="card">
         <h2 class="card__title">Question:</h2>
         <button
-          data-js="toggleBookmark4"
           aria-pressed="false"
           aria-label="bookmark"
           class="card__bookmark"
@@ -138,15 +125,10 @@
           <i class="material-icons" style="color: white"> bookmark_border </i>
         </button>
         <p class="card__question">What is GitHub mainly used for?</p>
-        <button
-          data-js="hideAnswer4"
-          aria-pressed="false"
-          class="card__button"
-          type="button"
-        >
+        <button aria-pressed="false" class="card__button" type="button">
           Show Answer
         </button>
-        <div data-js="answerFour" hidden>
+        <div>
           <h2 class="card__title">Answer:</h2>
           <p class="card__answer">
             hosting, version control, and collaboration
@@ -163,33 +145,24 @@
 
     <!-- Navigation -->
     <nav class="navigation" id="navigation">
-      <a class="navigation__button" href="/index.html" aria-label="Home"
-        ><div style="color: rgb(64, 0, 255)">
+      <button class="navigation__button" aria-label="Home">
+        <div style="color: rgb(64, 0, 255)">
           <i class="material-icons"> home</i>
-        </div></a
-      >
-      <a
-        class="navigation__button"
-        href="/pages/bookmarks.html"
-        aria-label="Bookmarks"
-        ><div style="color: white">
+        </div>
+      </button>
+      <button class="navigation__button" aria-label="Bookmarks">
+        <div style="color: white">
           <i class="material-icons"> bookmark </i>
-        </div></a
-      >
-      <a
-        class="navigation__button"
-        href="/pages/create-card.html"
-        aria-label="Create a Questioncard"
-        ><div style="color: white"><i class="material-icons"> edit </i></div></a
-      >
-      <a
-        class="navigation__button"
-        href="/pages/account.html"
-        aria-label="Account"
-        ><div style="color: white">
+        </div>
+      </button>
+      <button class="navigation__button" aria-label="Create a Questioncard">
+        <div style="color: white"><i class="material-icons"> edit </i></div>
+      </button>
+      <button class="navigation__button" aria-label="Account">
+        <div style="color: white">
           <i class="material-icons"> person_outline </i>
-        </div></a
-      >
+        </div>
+      </button>
     </nav>
   </body>
 </html>
