@@ -87,3 +87,4 @@ buttonHideAnswer4.addEventListener('click', () => {
 });
 
 const hello = 'hello';
+console.log(hello);
