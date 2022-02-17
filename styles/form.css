@@ -15,7 +15,7 @@ input {
   width: 100%;
   color: aliceblue;
 }
-input[type="text"] {
+input[type='text'] {
   color: white;
   font-family: Ubuntu, Arial, sans-serif;
 }
