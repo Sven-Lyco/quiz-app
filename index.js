@@ -20,7 +20,7 @@ buttonHideAnswer1.addEventListener('click', () => {
   }
 });
 
-//Home
+//Switch Pages
 const pageHome = document.querySelector('[data-page="home"]');
 const pageBookmarks = document.querySelector('[data-page=bookmarks]');
 const pageCreate = document.querySelector('[data-page=create]');
@@ -74,5 +74,3 @@ buttonProfile.addEventListener('click', () => {
   buttonCreate.classList.remove('navigation__button--set');
   buttonProfile.classList.add('navigation__button--set');
 });
-
-console.log(pageHome);

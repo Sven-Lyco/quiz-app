@@ -227,33 +227,42 @@
         </article>
       </main>
     </div>
-    <!-- Footer -->
+    <!-- Navigation -->
     <nav class="navigation" id="navigation">
-      <a class="navigation__button" href="/index.html" aria-label="Home"
-        ><div style="color: white"><i class="material-icons"> home</i></div></a
+      <button
+        data-nav="home"
+        class="navigation__button navigation__button--set"
+        aria-label="Home"
       >
-      <a
+        <div>
+          <i class="material-icons"> home</i>
+        </div>
+      </button>
+      <button
+        data-nav="bookmarks"
         class="navigation__button"
-        href="/pages/bookmarks.html"
         aria-label="Bookmarks"
-        ><div style="color: rgb(64, 0, 255)">
+      >
+        <div>
           <i class="material-icons"> bookmark </i>
-        </div></a
-      >
-      <a
+        </div>
+      </button>
+      <button
+        data-nav="create"
         class="navigation__button"
-        href="/pages/create-card.html"
         aria-label="Create a Questioncard"
-        ><div style="color: white"><i class="material-icons"> edit </i></div></a
       >
-      <a
+        <div><i class="material-icons"> edit </i></div>
+      </button>
+      <button
+        data-nav="profile"
         class="navigation__button"
-        href="/pages/account.html"
-        aria-label="Account"
-        ><div style="color: white">
-          <i class="material-icons"> person_outline </i>
-        </div></a
+        aria-label="Profile"
       >
+        <div>
+          <i class="material-icons"> person_outline </i>
+        </div>
+      </button>
     </nav>
   </body>
 </html>
