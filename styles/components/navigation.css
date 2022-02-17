@@ -22,6 +22,10 @@
     0 0 16px blue;
 }
 
+.navigation__button--set {
+  color: rgb(64, 0, 255);
+}
+
 .navigation__button:active {
   background-color: rgb(64, 0, 255);
 }

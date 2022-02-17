@@ -16,36 +16,37 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <h1 class="header header__title">Account</h1>
-    <!-- Main -->
-    <main class="scrolling">
-      <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
-        >Skip to Navigation</a
-      >
-      <div class="card">
-        <div class="account__container account__container--row">
-          <img
-            class="account__image"
-            src="https://source.unsplash.com/100x100/?portraitmen"
-            alt=""
-          />
-          <h2 class="account__name">Jon Doe</h2>
+    <div class="scrolling">
+      <!--PROFILE-->
+      <main data-page="profile" class="mt-70">
+        <h1 class="header header__title">Account</h1>
+        <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
+          >Skip to Navigation</a
+        >
+        <div class="card">
+          <div class="account__container account__container--row">
+            <img
+              class="account__image"
+              src="https://source.unsplash.com/100x100/?portraitmen"
+              alt=""
+            />
+            <h2 class="account__name">Jon Doe</h2>
+          </div>
+          <h3 class="account__title">About me:</h3>
+          <p class="account__description">
+            I love coding and to play awesome created Quiz-Games!
+          </p>
+          <h3 class="account_description--title">My Skills:</h3>
+          <ul class="card__tag-group" role="list">
+            <li class="card__tag">HTML</li>
+            <li class="card__tag">CSS</li>
+            <li class="card__tag">GIT</li>
+            <li class="card__tag">GitHub</li>
+          </ul>
+          <button class="card__button">Logout</button>
         </div>
-        <h3 class="account__title">About me:</h3>
-        <p class="account__description">
-          I love coding and to play awesome created Quiz-Games!
-        </p>
-        <h3 class="account_description--title">My Skills:</h3>
-        <ul class="card__tag-group" role="list">
-          <li><a href="#" class="card__tag">HTML</a></li>
-          <li><a href="#" class="card__tag">CSS</a></li>
-          <li><a href="#" class="card__tag">GIT</a></li>
-          <li><a href="#" class="card__tag">GitHub</a></li>
-        </ul>
-        <button class="card__button">Logout</button>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <!-- Footer -->
     <nav class="navigation" id="navigation">
