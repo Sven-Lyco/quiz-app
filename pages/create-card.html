@@ -16,80 +16,88 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <h1 class="header header__title">Create</h1>
-    <!-- Main -->
-    <main class="scrolling">
-      <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
-        >Skip to Navigation</a
-      >
-      <form class="card" action="#">
-        <!-- Question -->
-        <label for="question-input"><p>Question:</p></label>
-        <textarea
-          class="form__textarea"
-          required
-          cols="23"
-          rows="4"
-          name="question"
-          id="question-input"
-          placeholder="Please type in a Question"
-        ></textarea>
+    <div class="scrolling">
+      <!--CREATE-CARD-->
+      <main data-page="create" class="mt-70">
+        <h1 class="header header__title">Create</h1>
+        <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
+          >Skip to Navigation</a
+        >
+        <form class="card" action="#">
+          <!-- Question -->
+          <label for="question-input"><p>Question:</p></label>
+          <textarea
+            class="form__textarea"
+            required
+            cols="23"
+            rows="4"
+            name="question"
+            id="question-input"
+            placeholder="Please type in a Question"
+          ></textarea>
 
-        <!-- Answer -->
-        <label for="answer-input"><p>Answer:</p></label>
-        <textarea
-          class="form__textarea"
-          cols="23"
-          rows="4"
-          required
-          name="answer"
-          id="answer-input"
-          placeholder="Please type in your Answer"
-        ></textarea>
+          <!-- Answer -->
+          <label for="answer-input"><p>Answer:</p></label>
+          <textarea
+            class="form__textarea"
+            cols="23"
+            rows="4"
+            required
+            name="answer"
+            id="answer-input"
+            placeholder="Please type in your Answer"
+          ></textarea>
 
-        <!-- Tags -->
-        <label for="tags-input"><p>Tags:</p></label>
-        <input
-          class="form__textarea"
-          type="text"
-          name="tags"
-          id="tags-input"
-          placeholder="html, css, git..."
-        />
-        <button class="card__button">Create Card</button>
-      </form>
-    </main>
+          <!-- Tags -->
+          <label for="tags-input"><p>Tags:</p></label>
+          <input
+            class="form__textarea"
+            type="text"
+            name="tags"
+            id="tags-input"
+            placeholder="html, css, git..."
+          />
+          <button class="card__button">Create Card</button>
+        </form>
+      </main>
+    </div>
 
-    <!-- Footer -->
+    <!-- Navigation -->
     <nav class="navigation" id="navigation">
-      <a class="navigation__button" href="/index.html" aria-label="Home"
-        ><div style="color: white"><i class="material-icons">home</i></div></a
+      <button
+        data-nav="home"
+        class="navigation__button navigation__button--set"
+        aria-label="Home"
       >
-      <a
+        <div>
+          <i class="material-icons"> home</i>
+        </div>
+      </button>
+      <button
+        data-nav="bookmarks"
         class="navigation__button"
-        href="/pages/bookmarks.html"
         aria-label="Bookmarks"
-        ><div style="color: white">
+      >
+        <div>
           <i class="material-icons"> bookmark </i>
-        </div></a
-      >
-      <a
+        </div>
+      </button>
+      <button
+        data-nav="create"
         class="navigation__button"
-        href="/pages/create-card.html"
         aria-label="Create a Questioncard"
-        ><div style="color: rgb(64, 0, 255)">
-          <i class="material-icons"> edit </i>
-        </div></a
       >
-      <a
+        <div><i class="material-icons"> edit </i></div>
+      </button>
+      <button
+        data-nav="profile"
         class="navigation__button"
-        href="/pages/account.html"
-        aria-label="Account"
-        ><div style="color: white">
-          <i class="material-icons"> person_outline </i>
-        </div></a
+        aria-label="Profile"
       >
+        <div>
+          <i class="material-icons"> person_outline </i>
+        </div>
+      </button>
     </nav>
   </body>
 </html>

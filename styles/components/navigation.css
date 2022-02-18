@@ -9,7 +9,10 @@
 }
 
 .navigation__button {
+  background-color: black;
+  border: none;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +22,12 @@
     0 0 16px blue;
 }
 
-.navigation__button:hover {
-  color: blue;
+.navigation__button--set {
+  color: rgb(64, 0, 255);
+}
+
+.navigation__button:active {
+  background-color: rgb(64, 0, 255);
 }
 
 .navigation__button--bookmarks {
