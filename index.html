@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <!-- import JavaScript File -->
-    <script defer src="./index.js"></script>
+    <script defer src="./index.js" type="module"></script>
     <title>Quizzies</title>
   </head>
 
@@ -38,8 +38,8 @@
             What does the abbreviation HTML stand for?
           </p>
           <button
+            data-js="showAnswerButton"
             aria-expanded="false"
-            data-js="showAnswer"
             class="card__button"
             type="button"
           >
@@ -68,7 +68,12 @@
             <i class="material-icons" style="color: white"> bookmark_border </i>
           </button>
           <p class="card__question">What is the 'box-model'?</p>
-          <button aria-expanded="false" class="card__button" type="button">
+          <button
+            data-js="showAnswerButton"
+            aria-expanded="false"
+            class="card__button"
+            type="button"
+          >
             Show Answer
           </button>
           <div>
@@ -96,7 +101,12 @@
             <i class="material-icons" style="color: white"> bookmark_border </i>
           </button>
           <p class="card__question">What does git stand for?</p>
-          <button aria-expanded="false" class="card__button" type="button">
+          <button
+            data-js="showAnswerButton"
+            aria-expanded="false"
+            class="card__button"
+            type="button"
+          >
             Show Answer
           </button>
           <div>
@@ -126,7 +136,12 @@
             <i class="material-icons" style="color: white"> bookmark_border </i>
           </button>
           <p class="card__question">What is GitHub mainly used for?</p>
-          <button aria-expanded="false" class="card__button" type="button">
+          <button
+            data-js="showAnswerButton"
+            aria-expanded="false"
+            class="card__button"
+            type="button"
+          >
             Show Answer
           </button>
           <div>
