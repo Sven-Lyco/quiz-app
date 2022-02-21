@@ -87,7 +87,3 @@
     0 0 7px rgb(64, 0, 255), 0 0 8px rgb(64, 0, 255), 0 0 9px rgb(64, 0, 255),
     0 0 10px rgb(64, 0, 255);
 }
-
-.card__tag:active {
-  background-color: rgb(64, 0, 255);
-}
