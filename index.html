@@ -376,8 +376,13 @@
         >
         <form class="card" action="#">
           <!-- Question -->
-          <label for="question-input"><p>Question:</p></label>
+          <label for="question-input">
+            <p>Question:</p>
+            <span data-js="amountLeftQuestionText"></span>
+            <span> / 200</span>
+          </label>
           <textarea
+            data-js="textAddQuestion"
             class="form__textarea"
             required
             cols="23"
@@ -385,11 +390,17 @@
             name="question"
             id="question-input"
             placeholder="Please type in a Question"
+            maxlength="200"
           ></textarea>
 
           <!-- Answer -->
-          <label for="answer-input"><p>Answer:</p></label>
+          <label for="answer-input">
+            <p>Answer:</p>
+            <span data-js="amountLeftAnswerText"></span>
+            <span> / 200</span>
+          </label>
           <textarea
+            data-js="textAddAnswer"
             class="form__textarea"
             cols="23"
             rows="4"
@@ -397,6 +408,7 @@
             name="answer"
             id="answer-input"
             placeholder="Please type in your Answer"
+            maxlength="200"
           ></textarea>
 
           <!-- Tags -->
