@@ -19,365 +19,37 @@
   <body>
     <div class="scrolling">
       <!-- HOME-->
-      <main data-page="home" class="mt-70">
+      <main data-page="home" class="mt-60">
         <h1 class="header header__title">Quizzies</h1>
-        <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
-          >Skip to Navigation</a
-        ><!--ANSWER Question Card 1 -->
-        <article class="card" data-js="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            data-js="Bookmark"
-            aria-pressed="false"
-            aria-label="bookmark"
-            class="card__bookmark"
-          >
-            <i class="material-icons" style="color: white"> bookmark_border </i>
-          </button>
-          <p class="card__question">
-            What does the abbreviation HTML stand for?
-          </p>
-          <button
-            data-js="showAnswerButton"
-            aria-expanded="false"
-            class="card__button"
-            type="button"
-          >
-            Show Answer
-          </button>
-          <div data-js="answerText" hidden>
-            <h2 class="card__title">Answer:</h2>
-            <p class="card__answer">Hypertext Markup Language</p>
-          </div>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">CSS</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-        <!--ANSWER Question Card 2 -->
-        <article class="card" data-js="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            data-js="Bookmark"
-            aria-pressed="false"
-            aria-label="bookmark"
-            class="card__bookmark"
-          >
-            <i class="material-icons" style="color: white"> bookmark_border </i>
-          </button>
-          <p class="card__question">What is the 'box-model'?</p>
-          <button
-            data-js="showAnswerButton"
-            aria-expanded="false"
-            class="card__button"
-            type="button"
-          >
-            Show Answer
-          </button>
-          <div data-js="answerText" hidden>
-            <h2 class="card__title">Answer:</h2>
-            <p class="card__answer">
-              it describes and determines the individual layers of an element
-            </p>
-          </div>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">CSS</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-        <!--ANSWER Question Card 3 -->
-        <article class="card" data-js="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            data-js="Bookmark"
-            aria-pressed="false"
-            aria-label="bookmark"
-            class="card__bookmark"
-          >
-            <i class="material-icons" style="color: white"> bookmark_border </i>
-          </button>
-          <p class="card__question">What does git stand for?</p>
-          <button
-            data-js="showAnswerButton"
-            aria-expanded="false"
-            class="card__button"
-            type="button"
-          >
-            Show Answer
-          </button>
-          <div data-js="answerText" hidden>
-            <h2 class="card__title">Answer:</h2>
-            <p class="card__answer">
-              greater integration terminal - Linus Torvalds, the guy who
-              invented git (and linux), said: “I am an egotistical bastard, and
-              I name all my projects after myself. First "Linux", now "Git".”
-            </p>
-          </div>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">CSS</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-        <!--ANSWER Question Card 4 -->
-        <article class="card" data-js="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            data-js="Bookmark"
-            aria-pressed="false"
-            aria-label="bookmark"
-            class="card__bookmark"
-          >
-            <i class="material-icons" style="color: white"> bookmark_border </i>
-          </button>
-          <p class="card__question">What is GitHub mainly used for?</p>
-          <button
-            data-js="showAnswerButton"
-            aria-expanded="false"
-            class="card__button"
-            type="button"
-          >
-            Show Answer
-          </button>
-          <div data-js="answerText" hidden>
-            <h2 class="card__title">Answer:</h2>
-            <p class="card__answer">
-              hosting, version control, and collaboration
-            </p>
-          </div>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">CSS</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
+        <a class="invisible" href="#navigation" aria-label="Skip to Navigation">
+          Skip to Navigation
+        </a>
+        <ul role="list" class="card-list" data-js="cards"></ul>
       </main>
       <!-- BOOKMARKS-->
-      <main data-page="bookmarks" class="mt-70 hidden">
+      <main data-page="bookmarks" class="mt-60 hidden">
         <h1 class="header header__title">Bookmarks</h1>
         <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
           >Skip to Navigation</a
         >
-        <!-- Question Card 1-->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">
-            What does the abbreviation HTML stand for?
-          </p>
-          <button aria-pressed="false" class="card__button" type="button">
-            Show Answer
-          </button>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!--ANSWER Question Card 1 -->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">
-            What does the abbreviation HTML stand for?
-          </p>
-          <button
-            aria-pressed="false"
-            class="card__button-hide-answer"
-            type="button"
-          >
-            Hide Answer
-          </button>
-          <h2 class="card__title">Answer:</h2>
-          <p class="card__answer">Hypertext Markup Language</p>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!-- Question Card 2-->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What is the 'box-model'?</p>
-          <button aria-pressed="false" class="card__button" type="button">
-            Show Answer
-          </button>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!--ANSWER Question Card 2 -->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What is the 'box-model'?</p>
-          <button
-            aria-pressed="false"
-            class="card__button-hide-answer"
-            type="button"
-          >
-            Hide Answer
-          </button>
-          <h2 class="card__title">Answer:</h2>
-          <p class="card__answer">
-            it describes and determines the individual layers of an element
-          </p>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!-- Question Card 3-->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What does git stand for?</p>
-          <button aria-pressed="false" class="card__button" type="button">
-            Show Answer
-          </button>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!--ANSWER Question Card 3 -->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What does git stand for?</p>
-          <button
-            aria-pressed="false"
-            class="card__button-hide-answer"
-            type="button"
-          >
-            Hide Answer
-          </button>
-          <h2 class="card__title">Answer:</h2>
-          <p class="card__answer">
-            greater integration terminal - Linus Torvalds, the guy who invented
-            git (and linux), said: “I’m an egotistical bastard, and I name all
-            my projects after myself. First "Linux", now "Git".”
-          </p>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!-- Question Card 4-->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What is GitHub mainly used for?</p>
-          <button aria-pressed="false" class="card__button" type="button">
-            Show Answer
-          </button>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
-
-        <!--ANSWER Question Card 4 -->
-        <article class="card">
-          <h2 class="card__title">Question:</h2>
-          <button
-            aria-pressed="true"
-            class="card__bookmark card__bookmark--set"
-          >
-            <i class="material-icons" style="color: white"> bookmark </i>
-          </button>
-          <p class="card__question">What is GitHub mainly used for?</p>
-          <button
-            aria-pressed="false"
-            class="card__button-hide-answer"
-            type="button"
-          >
-            Hide Answer
-          </button>
-          <h2 class="card__title">Answer:</h2>
-          <p class="card__answer">
-            hosting, version control, and collaboration
-          </p>
-          <ul class="card__tag-group" role="list">
-            <li class="card__tag">HTML</li>
-            <li class="card__tag">Basic</li>
-            <li class="card__tag">Web</li>
-            <li class="card__tag">Bootcamp</li>
-          </ul>
-        </article>
       </main>
       <!--CREATE-CARD-->
-      <main data-page="create" class="mt-70 hidden">
+      <main data-page="create" class="mt-60 hidden">
         <h1 class="header header__title">Create</h1>
         <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
           >Skip to Navigation</a
         >
-        <form class="card" action="#">
+        <form data-js="form" class="card" action="#">
           <!-- Question -->
-          <label for="question-input"><p>Question:</p></label>
+          <label for="question-input">
+            <p>Question:</p>
+            <span class="font-size__small" data-js="amountLeftQuestionText">
+              200
+            </span>
+            <span class="font-size__small"> / 200</span>
+          </label>
           <textarea
+            data-js="textAddQuestion"
             class="form__textarea"
             required
             cols="23"
@@ -385,11 +57,19 @@
             name="question"
             id="question-input"
             placeholder="Please type in a Question"
+            maxlength="200"
           ></textarea>
 
           <!-- Answer -->
-          <label for="answer-input"><p>Answer:</p></label>
+          <label for="answer-input">
+            <p>Answer:</p>
+            <span class="font-size__small" data-js="amountLeftAnswerText">
+              200
+            </span>
+            <span class="font-size__small"> / 200</span>
+          </label>
           <textarea
+            data-js="textAddAnswer"
             class="form__textarea"
             cols="23"
             rows="4"
@@ -397,6 +77,7 @@
             name="answer"
             id="answer-input"
             placeholder="Please type in your Answer"
+            maxlength="200"
           ></textarea>
 
           <!-- Tags -->
@@ -408,11 +89,11 @@
             id="tags-input"
             placeholder="html, css, git..."
           />
-          <button class="card__button">Create Card</button>
+          <button type="submit" class="card__button">Create Card</button>
         </form>
       </main>
       <!--PROFILE-->
-      <main data-page="profile" class="mt-70 hidden">
+      <main data-page="profile" class="mt-60 hidden">
         <h1 class="header header__title">Account</h1>
         <a class="invisible" href="#navigation" aria-label="Skip to Navigation"
           >Skip to Navigation</a
@@ -437,7 +118,7 @@
             <li class="card__tag">GIT</li>
             <li class="card__tag">GitHub</li>
           </ul>
-          <button class="card__button">Logout</button>
+          <button aria-label="Logout" class="card__button">Logout</button>
         </div>
       </main>
     </div>
