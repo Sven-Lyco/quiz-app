@@ -1,4 +1,8 @@
-const cardsData = [
+console.clear();
+
+const cardsContainer = document.querySelector('[data-js=cards]');
+
+let cardsData = [
   {
     question: 'What does the abbreviation HTML stand for?',
     answer: 'Hypertext Markup Language',
@@ -21,8 +25,35 @@ const cardsData = [
   },
 ];
 
-function renderCards(cardList) {
-  cardList.forEach(card => {
+const form = document.querySelector('[data-js="form"]');
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  const questionElement = form.elements.question;
+  const answerElement = form.elements.answer;
+  const tagsElement = form.elements.tags;
+
+  const newCard = {
+    question: questionElement.value,
+    answer: answerElement.value,
+    tags: tagsElement.value
+      .split(',')
+      .map(tag => tag.trim())
+      .filter(tag => tag.length),
+  };
+
+  cardsData = [newCard, ...cardsData];
+  renderCards();
+
+  form.reset();
+  questionElement.focus();
+});
+
+function renderCards() {
+  cardsContainer.innerHTML = '';
+
+  cardsData.forEach(card => {
     const cardElement = document.createElement('section');
     cardElement.className = 'card';
     cardElement.setAttribute('data-js', 'card');
@@ -58,8 +89,8 @@ function renderCards(cardList) {
               .join('')}
           </ul>
     `;
-    const main = document.querySelector('[data-page="home"]');
-    main.appendChild(cardElement);
+
+    cardsContainer.appendChild(cardElement);
   });
 }
 
