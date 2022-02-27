@@ -1,6 +1,6 @@
-console.clear();
-
 const cardsContainer = document.querySelector('[data-js=cards]');
+
+const form = document.querySelector('[data-js="form"]');
 
 let cardsData = [
   {
@@ -25,8 +25,6 @@ let cardsData = [
   },
 ];
 
-const form = document.querySelector('[data-js="form"]');
-
 form.addEventListener('submit', event => {
   event.preventDefault();
 
@@ -34,7 +32,7 @@ form.addEventListener('submit', event => {
   const answerElement = form.elements.answer;
   const tagsElement = form.elements.tags;
 
-  const newCard = {
+  let newCard = {
     question: questionElement.value,
     answer: answerElement.value,
     tags: tagsElement.value
@@ -55,6 +53,7 @@ function renderCards() {
 
   cardsData.forEach(card => {
     const cardElement = document.createElement('section');
+
     cardElement.className = 'card';
     cardElement.setAttribute('data-js', 'card');
     cardElement.innerHTML = `
@@ -89,7 +88,6 @@ function renderCards() {
               .join('')}
           </ul>
     `;
-
     cardsContainer.appendChild(cardElement);
   });
 }
