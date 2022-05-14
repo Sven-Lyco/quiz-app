@@ -59,7 +59,7 @@ function renderCards() {
     cardElement.innerHTML = `
     <h2 class="card__title">Question:</h2>
           <button
-            data-js="Bookmark"
+            data-js="bookmark"
             aria-pressed="false"
             aria-label="bookmark"
             class="card__bookmark"
@@ -70,8 +70,8 @@ function renderCards() {
             ${card.question}
           </p>
           <button
-            aria-label="AnswerButton"
             data-js="showAnswerButton"
+            aria-label="AnswerButton"
             aria-expanded="false"
             class="card__button"
             type="button"
@@ -97,7 +97,7 @@ function cards() {
   const cardSet = document.querySelectorAll('[data-js=card]');
 
   cardSet.forEach(card => {
-    const bookmarkButton = card.querySelector('[data-js=Bookmark]');
+    const bookmarkButton = card.querySelector('[data-js=bookmark]');
     const showAnswerButton = card.querySelector('[data-js=showAnswerButton]');
     const showAnswerText = card.querySelector('[data-js="answerText"]');
     let isAnswerShown = true;
